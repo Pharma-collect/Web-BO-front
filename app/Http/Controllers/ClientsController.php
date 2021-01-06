@@ -16,22 +16,24 @@ class ClientsController extends Controller
     public function login()
     {
         $username = request('username');
-        var_dump($username);
+        $password = request('password');
+
+        $client = new \GuzzleHttp\Client();
+
+        $response = $client->request('POST', 'https://88-122-235-110.traefik.me:61001/api/user_client/loginClient', [
+            'verify' => false,
+            'headers' => [
+                'Host' => 'node',
+            ],
+            'form_params' => [
+                'username' => 'romain.bechard',
+                'password' => 'root',
+            ]
+        ]);
+
+        $resultResponse = json_decode($response->getBody()->getContents());
+
+        var_dump($resultResponse->result->id);
           
     }
-
-
 }
-
-$client = new \GuzzleHttp\Client();
-    
-$response = $client->request('POST', 'https://88-122-235-110.traefik.me:61001/api/user_client/loginClient', [
-'headers' => [
-    'Host' => 'node',
- ],
-'form_params' => [
-    'username' => 'romain.bechard',
-    'password' => 'testpassword',
-]
-]);
-$response->json();
