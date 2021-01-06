@@ -26,14 +26,18 @@ class ClientsController extends Controller
                 'Host' => 'node',
             ],
             'form_params' => [
-                'username' => 'romain.bechard',
-                'password' => 'root',
+                'username' => $username,
+                'password' => $password,
             ]
         ]);
 
         $resultResponse = json_decode($response->getBody()->getContents());
 
-        var_dump($resultResponse->result->id);
-          
+        if($resultResponse->success){
+            var_dump($resultResponse->result);
+        } else {
+            var_dump($resultResponse->error);
+        }
+
     }
 }
