@@ -13,6 +13,7 @@ class ClientsController extends Controller
         return view('login');
     }
     
+    
     public function login()
     {
         $username = request('username');
