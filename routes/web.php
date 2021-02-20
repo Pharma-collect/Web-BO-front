@@ -39,4 +39,5 @@ Route::get('/home', [ProductsController::class, 'index']);
 Route::post('/home', [ProductsController::class, 'index']);
 
 Route::get('/index', [\App\Http\Controllers\ProductController::class, 'index']);
+Route::get('/index', [\App\Http\Controllers\ProductController::class, 'index']);
 
