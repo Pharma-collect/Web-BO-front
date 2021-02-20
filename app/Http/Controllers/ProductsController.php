@@ -14,6 +14,12 @@ class ProductsController extends Controller
         return view('/home')->with('products', $result);
     }
 
+    public function basket()
+    {
+        $result = $this->getProductsByPharmacy(1);
+        return view('/basket')->with('products', $result);
+    }
+
     public function getProductsByPharmacy($id_pharmacy)
     {
        
