@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="card-body">
-    <input type="text" id="search_input" class="form-control" onkeyup="searchFunction()" placeholder="Rechercher un produit...">
+    
     <br><br>
         <div class="table-responsive">
             <table class="table" >
