@@ -2,7 +2,6 @@
 
 @section('content')
 
-  <input type="text" id="search_input" class="form-control" onkeyup="searchFunction()" placeholder="Rechercher un produit...">
   <div class="row row-cols-1 row-cols-md-3 g-4">
     @foreach($products as $product)
     <div class="col">

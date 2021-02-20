@@ -126,7 +126,7 @@
 <div class="basket jsMiniCart" data-replacement="minicart">
 
     <div class="cart topMenuItem" data-quantity="0">
-                        <a class="link" href="">
+                        <a class="link" href="/basket">
             <i class="fa fa-shopping-cart fa-2x"></i>
             <span>
                 <span>
@@ -172,7 +172,7 @@
                     <ul class="menu count-9">
 
     <li class="item first home">
-        <a href="" class="link linkMenu"> <span><span><span><span><i class="fa fa-home homeIcon"></i> <span class="homeText">Accueil</span></span></span></span></span> </a>
+        <a href="/home" class="link linkMenu"> <span><span><span><span><i class="fa fa-home homeIcon"></i> <span class="homeText">Accueil</span></span></span></span></span> </a>
             </li>
 
 <li class="item hasMenu jsHasSubItems brands">
