@@ -20,7 +20,6 @@ Route::get('/welcome', function () {
 
 Route::view('contact', 'contact');
 Route::view('a-propos', 'a-propos');
-Route::view('home', 'home');
 Route::view('basket', 'basket');
 Route::view('login', 'login');
 Route::view('register','register');
@@ -34,3 +33,10 @@ use App\Http\Controllers\RegistersController;
 
 Route::get('/register', [RegistersController::class, 'create']);
 Route::post('/register',[RegistersController::class, 'store']);
+
+use App\Http\Controllers\ProductsController;
+Route::get('/home', [ProductsController::class, 'index']);
+Route::post('/home', [ProductsController::class, 'index']);
+
+Route::get('/index', [\App\Http\Controllers\ProductController::class, 'index']);
+
