@@ -3,7 +3,7 @@
 
 <head>
 
-    
+
 	<meta http-equiv="Content-Script-Type" content="text/javascript" />
 
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
@@ -17,9 +17,9 @@
 	<link href="https://www.pharmarket.com/assets/skin/favicon.png" rel="shortcut icon" />
 
 		<link rel="apple-touch-icon-precomposed" href="https://www.pharmarket.com/assets/skin/appletouchicon.png"/>
-	
+
 	<link rel="stylesheet" media="all" type="text/css" href="//fonts.googleapis.com/css?family=Strait|Lato:400,700" />
-	
+
 
 		<link href="//fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css" media="all" />
 
@@ -33,7 +33,7 @@
 <link href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" media="screen" rel="stylesheet" type="text/css" >
 <link href="//cdn.jsdelivr.net/npm/css-toggle-switch@latest/dist/toggle-switch.css" media="screen" rel="stylesheet" type="text/css" >
 <link href="https://www.pharmarket.com/assets/skin/style.css?rev_20200203_1527" media="all" rel="stylesheet" type="text/css" >
-	
+
     <link media="all" type="text/css" href="https://www.pharmarket.com/assets/skin/jcountdown.css" rel="stylesheet"  />
 
     <!--[if IE 11]>
@@ -45,9 +45,9 @@
 
         <link rel="stylesheet" type="text/css" href="https://www.pharmarket.com/assets/skin/responsive/menu.css?rev_20200203_1527"/>
                 <link rel="stylesheet" type="text/css" href="https://www.pharmarket.com/assets/skin/responsive/responsive.css?rev_20200203_1527"/>
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <script src="/assets/js/modernizr.custom.js?rev_20200203_1527"></script>
-        
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -58,12 +58,12 @@
     <![endif]-->
 
 
-    
+
         <meta name="robots" content="follow, index" /><link rel="canonical" href="" />
-    
+
 
             <meta name="google-site-verification" content="e61zx-KuHhL9b7kvQZkQ_1Q5CI28DGkP1LKT-PWPxnc" />
-    
+
             <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/0ae1bb721260ce620e24cf0c7/088411f9ef2ce616855a2f49c.js");</script>
 
 </head>
@@ -71,57 +71,26 @@
 
 <body lang="fr">
 
-    
+
 
     <!-- End Google Tag Manager -->
 
 
 
 <div class="blockGlobal withPromotionBanner  isHome  ">
-     
-    <div class="promotionBanner">
-                    <div>
-                <a href="">
-                    <span class="telephone mobile"></span>
-                    <span class="text">
-                        <span class="line">
-                            Télécharger notre application PharmaCollect disponible sur toutes les plateformes
-                        </span>
-                    </span>
-                </a>
-            </div>
-                            <div>
-                <a class="jsAjaxPharmaPopup" href="/user/subscribe-promo">
-                    <span class="picto promotion"></span>
-                    <span class="text">
-                        <span class="line">
-                            <strong>-10%</strong> sur votre première commande
-                            <strong>avec le code NOUVEAU10</strong>
-                        </span>
-                    </span>
-                </a>
-            </div>
-    </div>
+
+
 
 
 		<div class="clear"></div>
 
-        
+
 <header class="blockHeader">
 	<div class="inner">
 
 		<div class="block block-1">
-			<span class="mainLogo">
-                <a href="" class="link">
-					<span>
-						<span class="line line-1">
-                            <h1>LOGO Pharma collect</h1>
-                            <h1>                            <span class="logo-baseline">votre pharmacie en ligne</span>
-                            </h1>                        </span>
-					</span>
-				</a>
-			</span>
-        </div>
+			<img alt="Logo" src="resources/images/pharma.png">
+    </div>
 
         		<div class="block block-2">
 
@@ -136,13 +105,13 @@
                     <span class="validSearch"></span>
                 </div>
             </div>
-                        
+
 		</div>
-        
+
         		<div class="block block-3">
             <div class="inner">
 
-                
+
                     <div class="menuControl">
                         <a id="displayBloc" class="link" href="#"><span>Navigation</span></a>
                     </div>
@@ -153,7 +122,7 @@
         <span><span>Espace Client</span></span>
     </a>
     </div>
-                
+
 
                 				<div class="customerService">
 					<div class="inner">
@@ -162,9 +131,9 @@
                             <span>Rechercher<br /> une <span>Pharmacie</span></span>
                         </a>
 					</div>
-                </div>   
+                </div>
 
-                
+
 
 
 
@@ -183,7 +152,7 @@
             </span>
 
         </a>
-        
+
     </div>
 
 </div>
@@ -191,19 +160,19 @@
 
 
 
-                                
+
 			<hr>
 			</div>
-			
+
 		</div>
-        
+
 		<div class="clear"></div>
 	</div>
 
 </header> <!-- blockHeader end -->
 
 
-                        
+
 <nav class="blockMainMenu v2">
     <div class="inner">
 
@@ -215,7 +184,7 @@
 
                 <div class="menuResponsive">
                     <ul class="menu count-9">
-                    
+
     <li class="item first home">
         <a href="" class="link linkMenu"> <span><span><span><span><i class="fa fa-home homeIcon"></i> <span class="homeText">Accueil</span></span></span></span></span> </a>
             </li>
@@ -232,11 +201,11 @@
                     <div class="nTitle-2"><a href=""><span><span><span>Top 5</span></span></span></a></div>
 
     <ul class="listCat-2">
-        
+
             </ul>
 <div class="nTitle-2"><a href=""><span><span><span>A</span></span></span></a></div>
 
-   
+
 <div class="nTitle-2"><a href=""><span><span><span>B</span></span></span></a></div>
 
     <ul class="listCat-2">
@@ -259,7 +228,7 @@
                 </div>
 
                 <div class="clear"></div>
-            </div> 
+            </div>
         </div> <!-- mainMenu end -->
 
         <div class="clear"></div>
@@ -267,20 +236,20 @@
     </div>
 </nav> <!-- blockMainMenu end -->
 
-              
+
     <div class="blockCarouselHome" style="z-index: 1;">
 			<div class="flexslider carousel">
 				<div class="inner">
                 @yield('content')
-                
 
-              
-                
-			
+
+
+
+
 				</div>
 			</div>
-		</div> <!-- blockCarouselHome end -->  
-	
+		</div> <!-- blockCarouselHome end -->
+
                         <div class="clear"></div>
                     </div><!-- inner end -->
                 </div> <!-- centerContent end -->
@@ -300,7 +269,7 @@
         <div class="inner">
             <ul class="assets">
 
-                 
+
     <li class="item item-1 first rigorous">
         <a href="/a-propos"><span><span>Produits contrôlés<span class="extra">Vous passez commande auprès de pharmacies françaises</span></span></span></a>
     </li>
@@ -324,7 +293,7 @@
 		</div>
 		<div class="pharmacyNetwork">
 			<div class="inner">
-				
+
 				<div style="text-align: center">
 	                <a class="button button-1" href="">
 	                	<span><span><span><span>Rechercher votre Pharmacie</span></span></span></span>
@@ -337,8 +306,8 @@
 	</div>
 </div> <!-- blockAbout end -->
 
-        
-        		
+
+
 		<footer class="blockFooter">
 
     <div class="block block-2">
@@ -360,7 +329,7 @@
             </div>
             <div class="col col-2">
                 <div class="inner" style="text-align: right; ">
-                                    
+
                 </div>
             </div>
             <hr>
@@ -374,9 +343,9 @@
                 <div class="inner">
 
                     <div class="foot-list">
-                    
-                        
-                     
+
+
+
                     </div>
                     </div>
                     <div class="foot-list">
@@ -388,13 +357,13 @@
                                     <span><span><span><span>Qui est Pharmarket</span></span></span></span>
                                 </a>
                             </li>
-                            
+
                             <li class="item item-2 first active ">
                                 <a class="link linkMenu active" href="/programme-fidelite">
                                     <span><span><span><span>Programme fidélité</span></span></span></span>
                                 </a>
                             </li>
-                      
+
                             <li class="item item-3 first active ">
                                 <a class="link linkMenu active" href="/contact">
                                     <span><span><span><span>Contact</span></span></span></span>
@@ -427,10 +396,10 @@
                     <div style="clear:both"></div>
 
 
-                  
+
 				</div>
 			</div>
-            
+
             			<div class="col col-2">
 				<div class="inner">
                     <div class="title">Moyens de paiement acceptés</div>
@@ -450,7 +419,7 @@
         <div class="inner">
             <div class="inner">
 
-                
+
                 <div class="listLogo v2 ">
 
                     <a href="http://ansm.sante.fr/Declarer-un-effet-indesirable/Votre-declaration-concerne-un-medicament/Votre-declaration-concerne-un-medicament/(offset)/0"
@@ -464,11 +433,11 @@
                              src="https://www.pharmarket.com/assets/skin/logo-msante-2.gif" />
                     </a>
 
-                    
+
                 </div>
 
 
-                                                                                                                                        
+
                                 <span>Page mise à jour le
                     <script language="javascript" type="text/javascript">
                         var current_date = new Date(1578467520*1000);
@@ -497,9 +466,9 @@
 	</div> <!-- blockGlobal end -->
 
 	<div id="blockModal" class="blockPopup mid modal">
-	
+
 	<div class="overlay"></div>
-	
+
 	<div class="popup">
 		<div class="popupInner-1">
 			<div class="popupInner-2">
@@ -522,6 +491,6 @@
 
 
 
-    
+
 </body>
 </html>

@@ -2,55 +2,65 @@
 
 @section('content')
 
-@foreach($products as $product)
-
-         <div class="buttonBookmark">
-            <a href="" class="link jsAjaxPharmaLinkIfConnected bookmark-product-21166"><span>Mes Favoris</span></a>
-         </div>
-             
-            <a href="https://www.pharmarket.com/ppw/masque-medical-3-plis-50-masques-p21166"
-               class="visual productThumb jsGoToProductPage">
-                    <img src="{{$product->image_url}}" style="width:200px;"
-                         alt="$product->title" />
-                            </a>
-
-			<div class="infos">
-
-                <div class="name">
-                    <a class="productLink jsGoToProductPage" href="https://www.pharmarket.com/ppw/masque-medical-3-plis-50-masques-p21166">
-                        <h4>
-                        </h4>           <h5>  <span>{{$product->title}}</span>
-                        </h5>                    </a>
-				</div>
-
-                <div class="compo">Protections respiratoires à usage unique</div>
-                
-				<div class="action">
-                    <span class="price promo">
-                    <span class="new">{{$product->price}} <span>€</span></span>
-                     <span class="basket">
-                     <a class="jsAjaxPharmaLink" href="/cart/add/id/21166">
-                     <img src="/assets/skin/icon-basket-circle.png" alt="icône d'ajout au panier ronde"/>
-                     </a>
-                      </span>
-					</span>
-
-                <a class="btnNew v2 smaller smallerText jsAjaxPharmaLink" href="">
-                    <span><span><span><span>Ajouter au panier</span></span></span></span>
-                 </a>
-                	</div>
-        
-                    @endforeach	
-@stop
-
-<!--
-@foreach($products as $product)
-     <tr>
-        <td><img src={{$product->image_url}} style="width:200px;"></td>
-        <td> {{$product->title}} </td>
-        <td> {{$product->description}} </td>
-        <td> {{$product->capacity}} </td>
-        <td> {{$product->price}} € </td>
-
-     </tr>
+  <input type="text" id="search_input" class="form-control" onkeyup="searchFunction()" placeholder="Rechercher un produit...">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach($products as $product)
+    <div class="col">
+      <div class="card h-100" style="width: 18rem;">
+        <img class="card-img-top" src="{{$product->image_url}}" style="width:200px;" alt="$product->title" />
+        <div class="card-body">
+          <h5 class="card-title">{{$product->title}}</h5>
+          <p class="card-text">{{$product->description}}</p>
+          <p class="card-text">{{$product->price}} <span>€</span></p>
+          <a class="btnNew v2 smaller smallerText jsAjaxPharmaLink" href="">
+            <span><span><span><span>Ajouter au panier</span></span></span></span>
+          </a>
+        </div>
+      </div>
+    </div>
     @endforeach
+  </div>
+
+
+  <script>
+      function searchFunction() {
+      // Declare variables
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("search_input");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("products_table");
+      tr = table.getElementsByTagName("tr");
+
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[1];
+          if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+          } else {
+              tr[i].style.display = "none";
+          }
+          }
+      }
+      }
+  </script>
+
+
+
+
+
+
+  @stop
+
+  <!--
+  @foreach($products as $product)
+  <tr>
+  <td><img src={{$product->image_url}} style="width:200px;"></td>
+  <td> {{$product->title}} </td>
+  <td> {{$product->description}} </td>
+  <td> {{$product->capacity}} </td>
+  <td> {{$product->price}} € </td>
+
+</tr>
+@endforeach
