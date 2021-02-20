@@ -1,3 +1,6 @@
+@extends('layouts.layout_master')
+
+@section('content')
 
     <div class="card-body">
     <input type="text" id="search_input" class="form-control" onkeyup="searchFunction()" placeholder="Rechercher un produit...">
@@ -10,8 +13,6 @@
                     <th>Description</th>
                     <th>Contenance (ml)</th>
                     <th>Prix</th>
-                    <th>Modifier</th>
-                    <th>Supprimer</th>
                     
                 </thead>
                 <tbody id="products_table">
@@ -54,3 +55,4 @@
     }
     }
 </script>
+@endsection

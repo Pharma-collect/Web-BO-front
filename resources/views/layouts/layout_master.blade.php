@@ -36,10 +36,6 @@
 
     <link media="all" type="text/css" href="https://www.pharmarket.com/assets/skin/jcountdown.css" rel="stylesheet"  />
 
-    <!--[if IE 11]>
-    <link rel="stylesheet" media="screen" type="text/css" href="https://www.pharmarket.com/assets/skin/ie.css" />
-    <![endif]-->
-
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" >
 
@@ -47,15 +43,6 @@
                 <link rel="stylesheet" type="text/css" href="https://www.pharmarket.com/assets/skin/responsive/responsive.css?rev_20200203_1527"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <script src="/assets/js/modernizr.custom.js?rev_20200203_1527"></script>
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 
 
@@ -78,8 +65,6 @@
 
 
 <div class="blockGlobal withPromotionBanner  isHome  ">
-
-
 
 
 		<div class="clear"></div>
@@ -487,10 +472,6 @@
 		</div>
 	</div>
 </div>
-
-
-
-
 
 </body>
 </html>
