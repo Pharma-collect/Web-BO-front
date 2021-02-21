@@ -103,7 +103,7 @@
                     </div>
 
                     <div class="menuAccount jsTopMenuAccount" data-replacement="topMenuAccount">
-    <a class="account" href="#">
+    <a class="account" href="/mon-espace">
         <i class="fa fa-user fa-2x"></i>
         <span><span>Espace Client</span></span>
     </a>
@@ -423,20 +423,9 @@
                 </div>
 
 
-
-                                <span>Page mise à jour le
-                    <script language="javascript" type="text/javascript">
-                        var current_date = new Date(1578467520*1000);
-                        var dday = '0'+current_date.getUTCDate();
-                        var dmonth = '0'+(current_date.getMonth()+1);
-                        var dyear = current_date.getFullYear();
-                        document.write(dday.substr(dday.length-2)+'-'+dmonth.substr(dmonth.length-2)+'-'+dyear);
-                    </script>
-                </span> -
-
                 <span class="copyright">&copy; Copyright 2021</span> -
 
-                <a class="link" href="https://www.pharmarket.com"><span>Pharmarket<span class="sup">®</span></span></a>
+                <a class="link" href="https://www.pharmarket.com"><span>Pharma Collect<span class="sup">®</span></span></a>
 
             </div>
         </div>
@@ -455,23 +444,7 @@
 
 	<div class="overlay"></div>
 
-	<div class="popup">
-		<div class="popupInner-1">
-			<div class="popupInner-2">
-				<div class="popupInner-3">
-					<a class="close" data-dismiss="modal" aria-hidden="true" href="#Close"></a>
-					<div class="blockContent">
-						<div class="popupTitle">
-							<div class="title">
-								<span class="modal-header-title jsModalTitle">&nbsp;</span>
-							</div>
-						</div>
-						<div class="jsModalContent">&nbsp;</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 </div>
 
 </body>

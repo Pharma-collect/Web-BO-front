@@ -44,3 +44,6 @@ Route::post('/basket', [ProductsController::class, 'basket']);
 Route::get('/index', [\App\Http\Controllers\ProductController::class, 'index']);
 Route::get('/index', [\App\Http\Controllers\ProductController::class, 'index']);
 
+Route::get('/mon-espace', [ClientsController::class, 'view']);
+Route::post('/mon-espace', [ClientsController::class, 'vienw']);
+

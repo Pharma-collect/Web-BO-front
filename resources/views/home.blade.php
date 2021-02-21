@@ -50,16 +50,6 @@
 
 
 
-  @stop
+  @endsection
 
-  <!--
-  @foreach($products as $product)
-  <tr>
-  <td><img src={{$product->image_url}} style="width:200px;"></td>
-  <td> {{$product->title}} </td>
-  <td> {{$product->description}} </td>
-  <td> {{$product->capacity}} </td>
-  <td> {{$product->price}} € </td>
-
-</tr>
-@endforeach
+ 

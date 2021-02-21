@@ -10,7 +10,7 @@ class ClientsController extends Controller
     
     public function view()
     {
-        return view('login');
+        return view('client');
     }
     
     public function login()
