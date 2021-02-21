@@ -16,8 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\AuthenticationController;
-Route::get('/login', [\App\Http\Controllers\AuthenticationController::class, 'index']);
-Route::post('/login', [\App\Http\Controllers\AuthenticationController::class, 'login']);
+
 
 Route::get('/mon-espace', [\App\Http\Controllers\AuthenticationController::class, 'index']);
 Route::post('/mon-espace', [\App\Http\Controllers\AuthenticationController::class, 'login']);
@@ -50,6 +49,4 @@ Route::post('/basket', [ProductsController::class, 'basket']);
 Route::get('/index', [\App\Http\Controllers\ProductController::class, 'index']);
 Route::get('/index', [\App\Http\Controllers\ProductController::class, 'index']);
 
-Route::get('/mon-espace', [ClientsController::class, 'view']);
-Route::post('/mon-espace', [ClientsController::class, 'vienw']);
 

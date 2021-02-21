@@ -5,7 +5,12 @@ namespace App\Http\Controllers;
 class AuthenticationController extends Controller
 {
     public function index(){
-        return view('/home');
+        $data['is_connected'] = session('is_connected');
+        
+        return view('/client', $data);
+        
+
+        
     }
 
     public function login(){

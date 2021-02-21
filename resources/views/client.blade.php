@@ -68,8 +68,13 @@ width: 10em;
 
 
 <?php
-if ($is_connected == 0)
+if ( $is_connected == true){
+    
   echo "a est plus grand que b";
+
+}
+
+  else{}
 ?>
 
 
