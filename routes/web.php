@@ -13,21 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+
+
+use App\Http\Controllers\AuthenticationController;
+Route::get('/login', [\App\Http\Controllers\AuthenticationController::class, 'index']);
+Route::post('/login', [\App\Http\Controllers\AuthenticationController::class, 'login']);
+
+Route::get('/mon-espace', [\App\Http\Controllers\AuthenticationController::class, 'index']);
+Route::post('/mon-espace', [\App\Http\Controllers\AuthenticationController::class, 'login']);
 
 
 Route::view('contact', 'contact');
 Route::view('a-propos', 'a-propos');
 Route::view('basket', 'basket');
+
 Route::view('login', 'login');
 Route::view('register','register');
 
 use App\Http\Controllers\ClientsController;
 
-Route::get('/login', [ClientsController::class, 'view']);
-Route::post('/login',[ClientsController::class, 'login']);
+#Route::get('/login', [ClientsController::class, 'view']);
+#Route::post('/login',[ClientsController::class, 'login']);
 
 use App\Http\Controllers\RegistersController;
 

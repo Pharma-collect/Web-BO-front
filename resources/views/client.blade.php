@@ -66,6 +66,13 @@ width: 10em;
 
 <body>
 
+
+<?php
+if ($is_connected == 0)
+  echo "a est plus grand que b";
+?>
+
+
 <div class="row">
     
     <div class="col-lg-6">

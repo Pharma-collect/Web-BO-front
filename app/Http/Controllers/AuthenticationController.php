@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 class AuthenticationController extends Controller
 {
     public function index(){
-        return view('authentication/login');
+        return view('/home');
     }
 
     public function login(){
@@ -30,14 +30,21 @@ class AuthenticationController extends Controller
         if($resultResponse->success){
 
             session(['username' => $resultResponse->result->username]);
+            session(['name'=>$resultResponse->result->name]);
+            session(['lastname'=>$resultResponse->result->lastname]);
+            session(['mail'=>$resultResponse->result->mail]);
+            session(['phone'=>$resultResponse->result->phone]);
+            session(['birth'=>$resultResponse->result->birth]);
             session(['user_id' => $resultResponse->result->id]);
-            session(['isAdmin' => $resultResponse->result->is_admin]);
             session(['token' => $resultResponse->result->token]);
-            session(['pharmacy' => serialize($resultResponse->result->pharmacy)]);
-            session(['pharmacy_name' => $resultResponse->result->pharmacy->name]);
+            session(['is_connected' => true]);
+            
+            #session(['isAdmin' => $resultResponse->result->is_admin]);
+            #session(['pharmacy' => serialize($resultResponse->result->pharmacy)]);
 
-            return redirect('/basket');
+            return redirect('/mon-espace');
         } else {
+            session(['is_connected' => false]);
             return redirect('/login');
         }
     }
